@@ -1,0 +1,117 @@
+/* Header Section Styles in global Css Page  */
+/* --------------------------------------------------------- Brands  */
+.brandContainer {
+  padding: 30px 7%;
+  gap: 1rem;
+  margin: 4rem 0;
+}
+.brands {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* ---------------------------------------------- Customer Support  */
+.customerContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 3rem;
+  margin-top: 2rem;
+}
+/* --------------------------------------------------------curratedContainer  */
+
+.curratedContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 3rem;
+}
+.curratedContainer .picksImage {
+  height: 300px;
+  width: 100%;
+  object-fit: fill;
+}
+.curratedContainer .picksImage img {
+  height: 100%;
+  border-radius: 10px;
+  width: 100%;
+}
+/* ---------------------------------------featured  */
+.slick-slide > div {
+  margin: 0 50px;
+}
+.slick-slide > div:nth-child(1) {
+  margin-left: 0;
+}
+.slick-list {
+  margin-right: -30px;
+}
+/* ----------------------------------------------------------newsletterContainer  */
+.newsletterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1% 7%;
+  margin: 5rem 0;
+}
+/* ---------------------------------------------------------- Banner  */
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 10px;
+  background-color: #1d242d;
+}
+.banner .Image {
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+}
+.banner .Image img {
+  height: 100%;
+  border-radius: 10px 0px 0px 10px;
+}
+
+/* ------------------------------------------------------ Footer  */
+.footer {
+  padding: 4rem 7% 2rem 7%;
+  background: #eaeef2;
+  color: #000000;
+}
+
+.footerCol {
+  display: grid;
+  grid-template-columns: 0.5fr 0.17fr 0.17fr 0.17fr 0.17fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* ------------------------------------------------------ Media Query For Responsive Designs  */
+
+@media only screen and (max-width: 1024px) {
+}
+@media only screen and (max-width: 968px) {
+  .searchfield {
+    display: none;
+  }
+  .footerCol {
+    display: block;
+  }
+  .banner {
+    grid-template-columns: 1fr;
+  }
+  .banner .Image {
+    height: 200px;
+  }
+  .banner .Image img {
+    border-radius: 10px 10px 0px 0px;
+  }
+}
+@media only screen and (max-width: 565px) {
+  .brands {
+    justify-content: center;
+    gap: 2rem;
+  }
+}

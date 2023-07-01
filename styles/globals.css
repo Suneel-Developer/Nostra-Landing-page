@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+
+/* --------------------- Scrollbar  */
+html::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #eeee;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #333;
+}
+.slick-slide > div {
+  margin: 0 50px;
+}
+.slick-slide > div:nth-child(1) {
+  margin-left: 0;
+}
+.slick-list {
+  margin-right: -30px;
+}
+#heroslider .slick-slide > div{
+  margin: 0 30px 0px 0px;
+}
+.sliderImage{
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 80px;
+  text-align: center;
+}
+
+input {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+a {
+  transition: 0.3s;
+  color: #000000;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+a:hover {
+  opacity: 1;
+  margin-left: 3px;
+}
+
+/* -------------------------------------------------Header  */
+.navContent {
+  display: flex;
+  gap: 2rem;
+}
+
+.toggleMenu {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .navContent {
+    display: none;
+  }
+  .toggleMenu {
+    display: block;
+  }
+  .mobile-menu-link {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: #1d242d;
+    z-index: 999;
+    width: 100%;
+    display: block;
+    padding: 40px 7%;
+    height: 100vh;
+  }
+  .mobile-menu-link a {
+    display: block;
+    color: #eaeef2;
+    margin-bottom: 2rem;
+  }
+  .sliderImage{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 20px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 568px) {
+  h1 {
+    font-size: 18px;
+  }
+}
